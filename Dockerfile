@@ -71,6 +71,8 @@ ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/allpix-deps/SoXt-install/lib
 ENV G4WORKDIR=/allpix/allpix-install
 ENV PATH=$PATH:/allpix/allpix-install/bin
 
+#RUN chmod -R 666 /allpix-deps/*
+#RUN chmod -R 666 /allpix/*
 RUN chmod +x setup.sh
 
 ENTRYPOINT ["/allpix/setup.sh"]
